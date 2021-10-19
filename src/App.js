@@ -1,7 +1,7 @@
 import "./App.css";
 import AddExpense from "./Components/AddExpense";
-import Budget from "./Components/Budget";
 import CreateExpenseList from "./Components/CreateExpenseList";
+import Budget from "./Components/Budget";
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";

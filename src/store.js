@@ -1,6 +1,10 @@
-import { createStore } from "redux";
-import { reducer } from "./reducer";
+import { configureStore } from "@reduxjs/toolkit";
+import { budgetSlice } from "./features/expenses/budgetSlice";
+import { expenseSlice } from "./features/expenses/expenseSlice";
 
-const enhancer =
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
-export const store = createStore(reducer, enhancer);
+export const store = configureStore({
+  reducer: {
+    expenses: expenseSlice.reducer,
+    budget: budgetSlice.reducer,
+  },
+});

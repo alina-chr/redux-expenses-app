@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // /** @jsxImportSource @emotion/react */
 // import { jsx, css } from "@emotion/react";
-import { setNewBudget } from "../actions";
 import { buttonStyle, inputStyle, defaultColor } from "./Style";
+import { setNewBudget } from "../features/expenses/budgetSlice";
 
 export default function Budget() {
   const dispatch = useDispatch();

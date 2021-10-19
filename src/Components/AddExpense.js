@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
-import { addExpense } from "../actions";
+import { useDispatch } from "react-redux";
 import { buttonStyle, defaultColor, inputStyle, importantText } from "./Style";
 // /** @jsxImportSource @emotion/react */
 // import { jsx, css } from "@emotion/react";
+import { addExpense } from "../features/expenses/expenseSlice";
 
 const inputPattern = /^(.+):\s*([0-9]+)$/i;
 

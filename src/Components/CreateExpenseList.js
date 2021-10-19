@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { TiDelete } from "react-icons/ti";
 import { useDispatch } from "react-redux";
-import { deleteExpense } from "../actions";
+import { deleteExpense } from "../features/expenses/expenseSlice";
 // /** @jsxImportSource @emotion/react */
 // import { jsx, css } from "@emotion/react";
 import { liStyle } from "./Style";
